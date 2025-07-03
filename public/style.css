@@ -11,7 +11,7 @@ body {
   background: white;
   padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -28,7 +28,7 @@ form {
   background-color: #fafafa;
 }
 
-form h3 {
+form h2 {
   margin-top: 0;
   color: #444;
 }

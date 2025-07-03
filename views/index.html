@@ -6,26 +6,26 @@
   </head>
   <body>
     <div class="container">
-      <h1>🏋️‍♀️ Exercise Tracker</h1>
+      <h1>🏃‍♀️ Exercise Tracker</h1>
 
       <form action="/api/users" method="POST">
-        <h3>Create a New User</h3>
+        <h2>Create New User</h2>
         <input type="text" name="username" placeholder="Enter username" required />
-        <button type="submit">Create User</button>
+        <button type="submit">Create</button>
       </form>
 
       <form action="/api/users/:_id/exercises" method="POST">
-        <h3>Add Exercise</h3>
-        <input type="text" name=":_id" placeholder="User ID" required />
+        <h2>Add Exercise</h2>
+        <input type="text" name="_id" placeholder="User ID" required />
         <input type="text" name="description" placeholder="Description" required />
-        <input type="number" name="duration" placeholder="Duration (min)" required />
+        <input type="number" name="duration" placeholder="Duration (minutes)" required />
         <input type="date" name="date" />
         <button type="submit">Add Exercise</button>
       </form>
 
       <form action="/api/users/:_id/logs" method="GET">
-        <h3>Get Logs</h3>
-        <input type="text" name=":_id" placeholder="User ID" required />
+        <h2>Get Exercise Logs</h2>
+        <input type="text" name="_id" placeholder="User ID" required />
         <input type="date" name="from" />
         <input type="date" name="to" />
         <input type="number" name="limit" placeholder="Limit" />
